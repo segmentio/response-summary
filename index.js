@@ -1,18 +1,15 @@
 
-
 /**
  * Expose `summary`.
  */
 
 exports = module.exports = summary;
 
-
 /**
  * Define tokens container.
  */
 
 var tokens = exports.tokens = {};
-
 
 /**
  * Return a response summary.
@@ -31,7 +28,6 @@ function summary (req, res) {
   return result;
 }
 
-
 /**
  * Define a token function with the given `name`,
  * and callback `fn(req, res)`.
@@ -47,7 +43,6 @@ exports.token = function(name, fn) {
   return this;
 };
 
-
 /**
  * Status code.
  */
@@ -55,7 +50,6 @@ exports.token = function(name, fn) {
 exports.token('status', function (req, res)  {
   return res.headerSent ? res.statusCode : null;
 });
-
 
 /**
  * Response time.
@@ -65,7 +59,6 @@ exports.token('time', function (req) {
   return Date.now() - req._startTime;
 });
 
-
 /**
  * Response size - bytes sent.
  */
@@ -74,7 +67,6 @@ exports.token('size', function (req, res) {
   return res._sent;
 });
 
-
 /**
  * Content type.
  */
@@ -82,7 +74,6 @@ exports.token('size', function (req, res) {
 exports.token('type', function (req, res) {
   return res.get('content-type');
 });
-
 
 /**
  * Content length.

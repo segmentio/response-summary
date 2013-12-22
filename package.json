@@ -1,7 +1,4 @@
 {
-  "name": "s-response-summary",
-  "version": "1.0.0",
-  "publishConfig": {
-    "registry": "https://registry.segment.io"
-  }
+  "name": "response-summary",
+  "version": "1.0.0"
 }
