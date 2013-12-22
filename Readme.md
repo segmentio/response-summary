@@ -1,6 +1,6 @@
 # response-summary
 
-  Summarize an [express](https://github.com/visionmedia/express) response.
+  Summarize an [express](https://github.com/visionmedia/express) response for logging.
 
 ## Example
 
