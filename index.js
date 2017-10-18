@@ -64,7 +64,7 @@ exports.token('time', function (req) {
  */
 
 exports.token('size', function (req, res) {
-  return res._sent;
+  return req.socket ? req.socket.bytesWritten : res._sent;
 });
 
 /**
